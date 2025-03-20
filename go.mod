@@ -1,5 +1,3 @@
-module github.com/SuthishTwinarcus/go-package-ema
+module github.com/SuthishTwinarcus/ynma-go
 
-go 1.24.0
-
-replace github.com/SuthishTwinarcus/ynma-go => G:\yonoma_sdk\yonoma_go
+go 1.24.1
