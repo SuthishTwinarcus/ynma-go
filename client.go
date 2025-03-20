@@ -43,7 +43,7 @@ func (c *Client) request(method, endpoint string, payload interface{}) ([]byte, 
 
 	req.Header.Set("Authorization", "Bearer "+c.APIKey)
 	req.Header.Set("Content-Type", "application/json")
-	req.Header.Set("user-Agent", c.Version)
+	req.Header.Set("User-Agent", c.Version)
 
 	client := &http.Client{}
 	resp, err := client.Do(req)
