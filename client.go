@@ -10,16 +10,16 @@ import (
 
 const BaseURL = "http://api.yonoma.io/v1/"
 
-var Version = "1.1.22" 
+var Version = "1.1.22"
 
 type Client struct {
-	APIKey string
+	APIKey  string
 	Version string
 }
 
-func NewClient(apiKey string,  version string) *Client {
+func NewClient(apiKey string, version string) *Client {
 	return &Client{
-		APIKey: apiKey,
+		APIKey:  apiKey,
 		Version: version,
 	}
 }
