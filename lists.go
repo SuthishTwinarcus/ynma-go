@@ -26,5 +26,5 @@ func (c *Client) RetrieveList(listID string) ([]byte, error) {
 
 func (c *Client) DeleteList(listID string) ([]byte, error) {
 	endpoint := fmt.Sprintf("lists/%s/delete", listID)
-	return c.request("DELETE", endpoint, nil)
+	return c.request("POST", endpoint, nil)
 }
